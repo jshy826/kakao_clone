@@ -12,32 +12,34 @@
     <link rel="stylesheet" href="css/styles.css" />
     <title>Find | Kakao Clone</title>
   </head>
-  <body>
-    <div class="status-bar">
-      <div class="status-bar__column">
-        <span class="status-bar_clock">13:54</span>
+  <body class="header-body">
+    <div class="header-wrapper">
+      <div class="status-bar">
+        <div class="status-bar__column">
+          <span class="status-bar_clock">13:54</span>
+        </div>
+        <div class="status-bar__column">
+          <i class="far fa-clock"></i>
+          <i class="fas fa-volume-mute"></i>
+          <i class="fas fa-wifi"></i>
+          <span class="status-bar__battery-level">100%</span>
+          <i class="fas fa-battery-full"></i>
+        </div>
       </div>
-      <div class="status-bar__column">
-        <i class="far fa-clock"></i>
-        <i class="fas fa-volume-mute"></i>
-        <i class="fas fa-wifi"></i>
-        <span class="status-bar__battery-level">100%</span>
-        <i class="fas fa-battery-full"></i>
-      </div>
+      <header class="header">
+        <div class="header__header-column">
+          <h1 class="header__title">Find</h1>
+        </div>
+        <div class="header__header-column">
+          <span class="header__icon">
+            <i class="fas fa-search"></i>
+          </span>
+          <span class="header__icon">
+            <i class="fas fa-cog"></i>
+          </span>
+        </div>
+      </header>
     </div>
-    <header class="header">
-      <div class="header__header-column">
-        <h1 class="header__title">Find</h1>
-      </div>
-      <div class="header__header-column">
-        <span class="header__icon">
-          <i class="fas fa-search"></i>
-        </span>
-        <span class="header__icon">
-          <i class="fas fa-cog"></i>
-        </span>
-      </div>
-    </header>
     <main class="find">
       <header class="find__header">
         <ul class="find__header-list">
@@ -82,13 +84,13 @@
         <li class="find__friend friend">
           <div class="friend__column">
             <img
-              src="images/avatar.jpg"
+              src="images/ocean.jpg"
               alt="not find image"
               class="friend__avatar"
             />
             <div class="friend__content">
               <span class="friend__name">
-                Nicolas
+                TN
               </span>
             </div>
           </div>
@@ -109,7 +111,7 @@
         </li>
         <li class="nav__list-item">
           <a href="index.html" class="nav__list-link">
-            <div class="nav__badge">8</div>
+            <div class="nav__badge">3</div>
             <i class="far fa-comment"></i>
           </a>
         </li>

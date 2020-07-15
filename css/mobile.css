@@ -4,7 +4,7 @@
   height: 100%;
   top: 0;
   left: 0;
-  background-color: #fce006;
+  background: linear-gradient(to top, #c6ffdd, #fbd786, #f7797d);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,6 +16,20 @@
   line-height: 1.5;
   z-index: 3;
   display: none;
+}
+
+@keyframes turn-text {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotateX(1turn);
+  }
+}
+
+.bigScreen__text {
+  animation: turn-text 2s ease-in-out infinite;
+  text-shadow: 2px 2px #da5213;
 }
 
 @media screen and (min-width: 550px) {

@@ -18,7 +18,7 @@
 
 .more .more__suggestions {
   border-top: 1px solid #f7f7f7;
-  padding-top: 20px;
+  padding: 20px 20px;
 }
 
 .more .more__title {
@@ -45,7 +45,7 @@
 }
 
 .suggestion .suggestion__icon {
-  background-color: #fce006;
+  background-color: rgb(108, 95, 190);
   padding: 12px 12px;
   border-radius: 8px;
   display: flex;
@@ -55,4 +55,9 @@
 .suggestion__icon i {
   font-size: 25px;
   color: white;
+}
+
+.more {
+  padding-left: 20px;
+  padding-right: 20px;
 }

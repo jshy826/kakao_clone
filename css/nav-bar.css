@@ -4,8 +4,8 @@
   padding: 20px 50px;
   bottom: 0px;
   left: 0px;
-  background-color: #fcfcfc;
-  border-top: 1px solid #f7f7f7;
+  background-color: #cbd7fc;
+  border-top: 1px solid #cad4f3;
 }
 
 .nav .nav__list {
@@ -19,6 +19,15 @@
 
 .nav .nav__list-link {
   position: relative;
+}
+
+@keyframes badge-spin {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotateY(1turn);
+  }
 }
 
 .nav .nav__badge {
@@ -35,6 +44,7 @@
   align-items: center;
   border-radius: 50%;
   font-size: 12px;
+  animation: badge-spin 3s ease-in-out infinite;
 }
 
 @keyframes showNavBar {

@@ -1,3 +1,9 @@
+.friends {
+  margin-left: 20px;
+  margin-right: 20px;
+  min-height: 90vh;
+}
+
 .friends .friends__plus {
   padding: 20px 0px;
   margin: 20px 0px;
@@ -17,13 +23,45 @@
   border-radius: 15px;
   border: 1.5px solid #4bcf79;
   font-size: 12px;
+  width: 140px;
+  height: 30px;
+  display: flex;
+  background-color: #f7f7f7;
 }
 
-.friend__now-listening span {
+.now-listening {
+  white-space: nowrap;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  width: 110px;
+  height: 30px;
+}
+
+.now-listening:hover {
+  animation: text-animate 2.5s linear infinite;
+}
+
+@keyframes text-animate {
+  from {
+    text-indent: 0%;
+  }
+  to {
+    text-indent: -100%;
+  }
+}
+
+.friend__now-listening .now-listening {
   opacity: 0.7;
 }
 
 .friend .fa-play {
   color: #4bcf79;
-  padding-left: 5px;
+  width: 10px;
+  height: 30px;
+}
+
+.friends__list .friends__friend {
+  margin-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #f7f7f7;
 }

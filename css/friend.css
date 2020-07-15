@@ -60,3 +60,38 @@
   font-size: 12px;
   opacity: 0.6;
 }
+
+@keyframes chats-badge-spin {
+  from {
+    transform: none;
+    transform: translateX(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+.chat__username .nav__badge {
+  color: white;
+  background-color: #dc5d46;
+  display: inline-block;
+  padding: 3px 7px;
+  border-radius: 30%;
+  border-bottom-left-radius: 0%;
+  font-size: 12px;
+  margin-left: 2px;
+  vertical-align: super;
+  animation: chats-badge-spin 1s ease-in-out;
+}
+
+.chats .chats__chat {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #f7f7f7;
+}
+
+.chats__list {
+  padding: 0px 20px;
+}

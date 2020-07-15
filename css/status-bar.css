@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   margin: 15px 0px;
-  background-color: white;
+  background-color: #97abdb;
 }
 
 .status-bar .status-bar__column {
@@ -11,6 +11,11 @@
 
 .status-bar i {
   font-size: 14px;
+}
+
+.status-bar span {
+  font-size: 14px;
+  font-weight: 600;
 }
 
 .status-bar .status-bar__battery-level {
