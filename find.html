@@ -10,7 +10,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="css/styles.css" />
-    <title>Chats | Kakao Clone</title>
+    <title>Find | Kakao Clone</title>
   </head>
   <body>
     <div class="status-bar">
@@ -27,53 +27,79 @@
     </div>
     <header class="header">
       <div class="header__header-column">
-        <h1 class="header__title">Chats</h1>
+        <h1 class="header__title">Find</h1>
       </div>
       <div class="header__header-column">
         <span class="header__icon">
           <i class="fas fa-search"></i>
         </span>
         <span class="header__icon">
-          <i class="fas fa-comment-medical"></i>
-        </span>
-        <span class="header__icon">
-          <a href="settings.html">
-            <i class="fas fa-cog"></i>
-          </a>
+          <i class="fas fa-cog"></i>
         </span>
       </div>
     </header>
-
-    <main class="chats">
-      <ul class="cats__list">
-        <a href="chat.html">
-          <li class="chats__chat friends__friend friend">
-            <div class="friend__column">
-              <img
-                class="chat__avatar m-avatar"
-                src="images/avatar.jpg"
-                alt="not find"
-              />
-              <div class="chat__content friend__content">
-                <span class="chat__username friend__name">
-                  Lynn
-                  <span class="chat__mute">
-                    <i class="fas fa-volume-mute"></i>
-                  </span>
-                </span>
-                <span class="chat__preview friend__bottom-text">
-                  Going home!
-                </span>
-              </div>
-            </div>
-            <div class="friend__column">
-              <span class="chat__timestamp">Yesterday</span>
-            </div>
+    <main class="find">
+      <header class="find__header">
+        <ul class="find__header-list">
+          <li class="find__header-btn header-btn">
+            <span class="header-btn__icon">
+              <i class="fas fa-qrcode fa-2x"></i>
+            </span>
+            <span class="header__btn-title">
+              QR Code
+            </span>
           </li>
-        </a>
+          <li class="find__header-btn header-btn">
+            <span class="header-btn__icon">
+              <i class="far fa-address-book fa-2x"></i>
+            </span>
+            <span class="header__btn-title">
+              Add by Contacts
+            </span>
+          </li>
+          <li class="find__header-btn header-btn">
+            <span class="header-btn__icon">
+              <i class="fas fa-search-plus fa-2x"></i>
+            </span>
+            <span class="header__btn-title">
+              Add by ID
+            </span>
+          </li>
+          <li class="find__header-btn header-btn">
+            <span class="header-btn__icon">
+              <i class="far fa-envelope fa-2x"></i>
+            </span>
+            <span class="header__btn-title">
+              Invite
+            </span>
+          </li>
+        </ul>
+      </header>
+      <ul class="find__recommended">
+        <h5 class="find__title">
+          Recommended Friends
+        </h5>
+        <li class="find__friend friend">
+          <div class="friend__column">
+            <img
+              src="images/avatar.jpg"
+              alt="not find image"
+              class="friend__avatar"
+            />
+            <div class="friend__content">
+              <span class="friend__name">
+                Nicolas
+              </span>
+            </div>
+          </div>
+          <div class="friend__column">
+            <div class="friend__add-btn">
+              <i class="fas fa-user-plus"></i>
+            </div>
+          </div>
+        </li>
       </ul>
     </main>
-
     <nav class="nav">
       <ul class="nav__list">
         <li class="nav__list-item">
@@ -84,7 +110,7 @@
         <li class="nav__list-item">
           <a href="index.html" class="nav__list-link">
             <div class="nav__badge">8</div>
-            <i class="fas fa-comment"></i>
+            <i class="far fa-comment"></i>
           </a>
         </li>
         <li class="nav__list-item">
