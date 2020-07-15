@@ -4,6 +4,7 @@
   align-items: center;
   flex-direction: column;
   margin-top: 200px;
+  width: 500px;
 }
 
 .profile {
